@@ -1,0 +1,132 @@
+<!--                               БЭМ (Блок Элемент Модификатор)                                      -->
+
+<!--                                  БЛОК                                           -->
+<!-- Блок - это независимый компонент, название блока характеризует смысл "что это?" -->
+
+<!-- Верно -->
+<div class="logo"></div>
+<div class="menu"></div>
+<div class="error"></div>
+
+<!-- Неверно -->
+<div class="big-item"></div>
+<div class="orang-text"></div>
+
+<!--                                  ПРИНЦИП РАБОТЫ С БЛОКАМИ                                  -->
+<!-- Блоков божет быть сколько угодно                                                           -->
+
+<header class="header">
+  <div class="logo"></div>
+  <nav class="menu"></nav>
+</header>
+
+<!--                                      ЭЛЕМЕНТ                                      -->
+<!-- Элемент - Составная часть блока, которая не может быть использована в отрыве от него. 
+Название элемента характеризует смысл "Что это?"                                       -->
+
+<header class="header">
+  <div class="header__logo"></div>
+  <nav class="header__menu"></nav>
+</header>
+
+<form class="search-form" action="">
+  <input class="search-form__input" />
+  <button class="search-form__button">Найти</button>
+</form>
+
+<!--                                 ВЛОЖЕННОСТЬ                                  -->
+
+<!-- Верно                                                                        -->
+<div class="about">
+  <div class="about__inner">
+    <div class="about__items"></div>
+  </div>
+</div>
+
+<!-- или                                                                          -->
+
+<div class="anout">
+  <div class="about__inner">
+    <div class="about__inner-items"></div>
+  </div>
+</div>
+
+<!-- Неверно                                                                      -->
+<div class="about">
+  <!-- about - блок                                                               -->
+  <div class="about__inner">
+    <!-- about (название блока)__inner (название элемента) -  элемент             -->
+    <div class="about__inner__items"></div>
+    <!-- about (название блока)__inner (название элемента)__items (название 
+      элемента в элемента !!! ТАКОГО НЕ БЫВАЕТ !!! ) - элемент                    -->
+  </div>
+</div>
+
+<!--                               ВАЖНЫЙ ПРИНЦИП ВЛОЖЕННОСТИ                                     -->
+<!-- Пример                                                                                       -->
+<div class="block">
+  <div class="block__elem1">
+    <div class="block__elem2">
+      <div class="block__elem3"></div>
+    </div>
+  </div>
+</div>
+
+<!--             Вложенности в CSS                 -->
+
+<!-- 
+.block {}        | 
+.block__elem1 {} |__ правельно 
+.block__elem2 {} | 
+.block__elem3 {} | 
+-->
+
+<!-- .block__elem2 .block__elem3 {} - не правельно -->
+
+<!--                                           МОДИФИКАТОР                                            -->
+<!-- Модификатор - это сущность, определяющая внешний вид, состояние или поведение блока или элемента -->
+<!-- Название модификатора характеризует внешний вид "Какой размер?", "Какая тема?"                   -->
+
+<!-- Пример                                                                                           -->
+active size--lg
+
+<!--                                    Типы модификаторов                           -->
+<!-- 1) Булевый                                                                      -->
+<!-- Используют, когда важно только наличие или отсутствие модификатора              -->
+active disabled focused
+
+<!-- 2) Ключ-значений                                                                -->
+<!-- Используют, когдаважно значение модификатора                                    -->
+size--lg theme--space theme--winter
+
+<!-- Структура полного имени модификатора соответствует схеме:                       -->
+<!-- имя-блока--имя-модификатора--значение-модификатора                              -->
+<!--               или                                                               -->
+<!-- имя-блока--значение-модификатора                                                -->
+<!--               или                                                               -->
+<!-- имя-блока__имя-элемента--имя-модификатора--значение-модификатора                -->
+
+<!-- Пример                                                                          -->
+<a class="menu__link menu__link--theme--space" href=""></a>
+<a class="menu__link menu__link--active" href=""></a>
+<a class="menu menu--active" href=""></a>
+<a class="menu__link menu__link_active" href=""></a>
+<a class="menu__link" href=""></a>
+
+<!-- Модификатор нельзя использовать самостоятельно                                  -->
+
+<!--                                  МИКС                                  -->
+<!-- Приём позволяющий использовать разные БЭМ-сущьности на одном DOM-узле  -->
+<div class="search-form header__search-form"></div>
+
+<!--                     Файловая струтура                     -->
+
+<div class="title"></div>
+
+.title{ 
+
+} 
+
+title.html 
+title.css 
+title.js
