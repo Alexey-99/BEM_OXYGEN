@@ -1,0 +1,46 @@
+*,
+*::after *::before {
+  box-sizing: border-box;
+}
+
+body{
+    margin: 0;
+    max-width: 1440px;
+}
+.header {
+    background-image: url(../images/header-bg.png);
+}
+.header__top {
+    display: flex;
+}
+.contener {
+    width: 100%;
+}
+.header__top-inner {
+}
+.logo {
+}
+.logo__link {
+}
+.logo__img {
+}
+.menu {
+}
+.menu__list {
+}
+.menu__list-item {
+}
+.menu__link {
+}
+.menu__link--active {
+}
+.header__content {
+}
+.header__content-inner {
+}
+.header__content-title {
+}
+.header__content-description {
+}
+.header__content-decor {
+}
