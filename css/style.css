@@ -59,6 +59,7 @@ body {
   margin-left: 50px;
 }
 .menu__list-item:hover {
+  /* text-decoration:1px solid #fcbb08; */
   border-bottom: 1px solid #fcbb08;
 }
 .menu__link {
@@ -86,7 +87,13 @@ body {
   line-height: 20px;
   margin: 0;
   background: none;
-  color: #FCBB08;
+  color: #fcbb08;
 }
 .header__content-decor {
+}
+.header__content-decor-img{
+  bottom: 62px;
+  display: flex;
+  position: absolute;
+  left: 485px;
 }
