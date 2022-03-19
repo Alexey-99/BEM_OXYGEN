@@ -28,14 +28,14 @@ body {
   margin: 0 auto;
 }
 .header__top {
-  padding-top: 26px;
 }
 .header__top-inner {
   display: flex;
   justify-content: space-between;
 }
 .logo {
-  
+  margin-left: 52px;
+  margin-top: 26px;
 }
 .menu {
   padding-right: 53px;
@@ -67,8 +67,11 @@ body {
 }
 .header__content {
   background-image: url(../images/header-bg.png);
+  background-position: top;
   background-repeat: no-repeat;
-  height: calc(100vh - 94px);
+  background-size: cover;
+  padding-bottom: 62px;
+  min-height: calc(100vh - 94px);
 }
 .header__content-inner {
   font-family: 'Montserrat', sans-serif;
@@ -94,7 +97,6 @@ body {
 .header__content-decor {
 }
 .header__content-decor-img {
-  bottom: 62px;
   display: flex;
   position: absolute;
   left: 485px;
