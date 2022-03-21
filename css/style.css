@@ -209,9 +209,26 @@ body {
   margin-top: -2px;
 }
 
+.expertise__content-item-one span{
+  padding-left: 262px;
+}
+
+.expertise__content-item-two span{
+  padding-left: 244px;
+}
+
+.expertise__content-item-three span{
+  padding-left: 218px;
+}
 
 .expertise__text p {
   padding-bottom: 23px;
+  font-family: 'Open Sans', sans-serif;
+  font-style: normal;
+  font-weight: 300;
+  font-size: 14px;
+  line-height: 24px;
+  color: #373A39;
 }
 .expertise_item {
 }
