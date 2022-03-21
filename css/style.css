@@ -267,8 +267,6 @@ body {
   padding-right: 135px; 
   background: #F6F8FA;
 }
-.contener {
-}
 .features__inner {
   display: flex;
   justify-content: space-between;
@@ -288,6 +286,8 @@ body {
   margin-right: 0;
   width: 100%;
   margin-bottom: 85px;
+  letter-spacing: -1.65px;
+  color: #242121;
 }
 
 .features__title::before {
@@ -301,4 +301,43 @@ body {
   margin-top: 148px;
 }
 .features__text {
+  font-size: 14px;
+}
+
+.features__text p{
+  padding-bottom: 23px;
+}
+
+.portfolio {
+}
+.contener {
+}
+.portfolio__head {
+}
+.title {
+}
+.portfolio__title{
+  font-size: 60px;
+  margin-right: 0;
+  width: 100%;
+  margin-bottom: 85px;
+  letter-spacing: -1.65px;
+  color: #242121;
+}
+.portfolio__title::before{
+  left: 139px;
+}
+.portfolio__buttons {
+}
+.portfolio__btn {
+}
+.portfolio__images {
+}
+.portfolio__item-img {
+}
+.portfolio__item-title {
+}
+.portfolio__item-descr {
+}
+.portfolio__btn-all {
 }
