@@ -231,6 +231,8 @@ body {
   color: #373A39;
 }
 .expertise_item {
+  display: flex;
+  justify-content: space-between;
 }
 .expertise_item-img {
 }
