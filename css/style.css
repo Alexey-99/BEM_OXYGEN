@@ -273,7 +273,7 @@ body {
 }
 .features__img {
   margin-right: 130px;
-  width: 705px;
+  max-width: 705px;
   height: 840px;
 }
 
@@ -285,21 +285,15 @@ body {
   font-size: 60px;
   margin-right: 0;
   width: 100%;
-  margin-bottom: 85px;
+  margin-bottom: 14px;
   letter-spacing: -1.65px;
   color: #242121;
 }
 
-.features__title::before {
-  content: '';
-  background-image: url(../images/title-decor.svg);
-  position: absolute;
-  width: 60px;
-  height: 4px;
-  color: #fcbb08;
-  right: 450px;
-  margin-top: 148px;
+.features__title-decor{
+  margin-bottom: 67px;
 }
+
 .features__text {
   font-size: 14px;
 }
