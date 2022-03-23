@@ -50,7 +50,7 @@ body {
 .menu__list-item {
   text-transform: uppercase;
   transition: all 0.3s;
-  letter-spacing: 0.6px
+  letter-spacing: 0.6px;
 }
 .menu__list-item + .menu__list-item {
   margin-left: 50px;
@@ -166,7 +166,7 @@ body {
   font-weight: 400;
   font-size: 11px;
   line-height: 20px;
-  color: #1D1D1D;
+  color: #1d1d1d;
   padding-top: 9px;
 }
 .expertise__content-item {
@@ -210,15 +210,15 @@ body {
   margin-top: -2px;
 }
 
-.expertise__content-item-one span{
+.expertise__content-item-one span {
   padding-left: 262px;
 }
 
-.expertise__content-item-two span{
+.expertise__content-item-two span {
   padding-left: 244px;
 }
 
-.expertise__content-item-three span{
+.expertise__content-item-three span {
   padding-left: 218px;
 }
 
@@ -229,9 +229,9 @@ body {
   font-weight: 300;
   font-size: 14px;
   line-height: 24px;
-  color: #373A39;
+  color: #373a39;
 }
-.expertise__items{
+.expertise__items {
   display: flex;
   justify-content: space-between;
 }
@@ -245,7 +245,7 @@ body {
   height: 50px;
   padding-right: 35px;
 }
-.expertise__item-img-increased{
+.expertise__item-img-increased {
   height: 55px;
 }
 .expertise__item-title {
@@ -264,8 +264,8 @@ body {
 }
 
 .features {
-  padding-right: 135px; 
-  background: #F6F8FA;
+  padding-right: 135px;
+  background: #f6f8fa;
 }
 .features__inner {
   display: flex;
@@ -290,7 +290,7 @@ body {
   color: #242121;
 }
 
-.features__title-decor{
+.features__title-decor {
   margin-bottom: 67px;
 }
 
@@ -298,32 +298,48 @@ body {
   font-size: 14px;
 }
 
-.features__text p{
+.features__text p {
   padding-bottom: 23px;
 }
 
 .portfolio {
-}
-.contener {
+  margin-top: 141px;
 }
 .portfolio__head {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 103px;
+  align-items: center;
 }
-.title {
-}
-.portfolio__title{
+
+.portfolio__title {
   font-size: 60px;
   margin-right: 0;
-  width: 100%;
-  margin-bottom: 85px;
+  width: 252px;
   letter-spacing: -1.65px;
   color: #242121;
 }
-.portfolio__title::before{
+.portfolio__title::before {
   left: 139px;
 }
-.portfolio__buttons {
-}
 .portfolio__btn {
+  font-family: 'Open Sans', sans-serif;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 12px;
+  line-height: 24px;
+  letter-spacing: 2px;
+  color: #333333;
+  background: none;
+  border: 0;
+  padding: 0;
+}
+
+.portfolio__btn + .portfolio__btn{
+  margin-left: 51px;
+}
+.portfolio__btn:hover{
+  border-bottom: 1px solid #fcbb08;
 }
 .portfolio__images {
 }
