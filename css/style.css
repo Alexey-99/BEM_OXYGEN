@@ -276,8 +276,7 @@ body {
 }
 .features__img {
   margin-right: 130px;
-  max-width: 705px;
-  height: 840px;
+  max-width: 50%;
 }
 
 .features__title {
@@ -369,6 +368,7 @@ body {
   display: flex;
 }
 .portfolio__item-img:hover {
+  width: -12px;
   background: linear-gradient(
       0deg,
       rgba(36, 33, 33, 0.8),
