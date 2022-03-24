@@ -509,12 +509,13 @@ body {
 
 
 .slider {
-  padding: 137px 0 325px 0;
-  display: flex;
-  justify-content: space-between;
+  padding: 307px 0 325px 133px;
+  background: #F6F8FA;
 }
 .slider__item {
+  
 }
+
 .slider__item-title {
   font-family: 'Montserrat', sans-serif;
   font-style: normal;
@@ -522,8 +523,49 @@ body {
   font-size: 40px;
   line-height: 52px;
   color: #242121;
+  padding-bottom: 32px;
 }
 .slider__item-text {
   font-size: 14px;
-  color: #242121;
+  color: #777777;
+}
+
+.slick-list {
+  width: 679px;
+}
+.slick-arrow{
+  width: 35px;
+  height: 35px;
+  border: 0;
+  background: transparent;
+}
+.slick-prev{
+  position: absolute;
+  left: 38px;
+  top: 45%;
+}
+
+.slick-next{
+  position: absolute;
+  right: 38px;
+  top: 45%;
+}
+.slick-dots{
+  /* display: flex;
+  justify-content: flex-start; */
+}
+
+.slick-dots button {
+  background-color: transparent;
+  border:0;
+  padding: 6px;
+  color: #fff;
+  font-size: 24px;
+  line-height: 28px;
+  opacity: 0.5;
+  cursor: pointer;
+}
+
+.slick-dots li{
+
 }
