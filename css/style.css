@@ -490,8 +490,6 @@ body {
   justify-content: space-between;
   align-items: center;
 }
-.statistics__item {
-}
 .statistics__item-num {
   font-family: 'Montserrat', sans-serif;
   font-style: normal;
@@ -507,4 +505,15 @@ body {
   font-size: 14px;
   line-height: 19px;
   color: #00B2A0;
+}
+
+
+.slider {
+  padding: 137px 0 325px 0;
+}
+.slider__item {
+}
+.slider__item-title {
+}
+.slider__item-text {
 }
