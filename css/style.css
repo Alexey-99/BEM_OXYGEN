@@ -510,10 +510,20 @@ body {
 
 .slider {
   padding: 137px 0 325px 0;
+  display: flex;
+  justify-content: space-between;
 }
 .slider__item {
 }
 .slider__item-title {
+  font-family: 'Montserrat', sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 40px;
+  line-height: 52px;
+  color: #242121;
 }
 .slider__item-text {
+  font-size: 14px;
+  color: #242121;
 }
