@@ -480,7 +480,6 @@ body {
   max-height: 324px;
   cursor: pointer;
 }
-
 .statistics {
   margin: 164px 0 166px 0;
 }
@@ -505,14 +504,10 @@ body {
   line-height: 19px;
   color: #00b2a0;
 }
-
 .slider {
   padding: 307px 0 114px 133px;
   background: #f6f8fa;
 }
-.slider__item {
-}
-
 .slider__item-title {
   font-family: 'Montserrat', sans-serif;
   font-style: normal;
@@ -526,7 +521,6 @@ body {
   font-size: 14px;
   color: #777777;
 }
-
 .slick-list {
   max-width: 679px;
   margin-bottom: 197px;
@@ -542,22 +536,18 @@ body {
   position: absolute;
   left: 38px;
 }
-
 .slick-next {
   position: absolute;
   right: 38px;
 }
-
 .slick-dots {
   display: flex;
   justify-content: flex-start;
 }
-
 .slick-dots li {
   width: 22px;
   height: 0;
 }
-
 .slick-dots button {
   width: 6px;
   height: 6px;
@@ -571,11 +561,49 @@ body {
   margin: 0 6px;
   cursor: pointer;
 }
-
-
 .slick-active button {
   opacity: 1;
   width: 10px;
   height: 10px;
   margin: 0 10px;
+}
+
+.team {
+  padding-top: 120px;
+  padding-bottom: 164px;
+}
+.contener {
+}
+.title {
+}
+.team__title {
+  font-size: 60px;
+  margin-bottom: 102px;
+  letter-spacing: -1.65px;
+}
+.team__items {
+  display: flex;
+  justify-content: space-between;
+}
+.team__item + .team__item {
+  margin-left: 30px;
+}
+.team__item-img {
+}
+.team__item-name {
+  text-align: center;
+  font-family: 'Montserrat', sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 17px;
+  color: #333333;
+  text-transform: uppercase;
+  margin-bottom: 12px;
+}
+.team__item-position {
+  text-align: center;
+  font-size: 12px;
+  line-height: 16px;
+  color: #C2C2C2;
 }
