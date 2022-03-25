@@ -567,14 +567,9 @@ body {
   height: 10px;
   margin: 0 10px;
 }
-
 .team {
   padding-top: 120px;
   padding-bottom: 164px;
-}
-.contener {
-}
-.title {
 }
 .team__title {
   font-size: 60px;
@@ -587,8 +582,6 @@ body {
 }
 .team__item + .team__item {
   margin-left: 30px;
-}
-.team__item-img {
 }
 .team__item-name {
   text-align: center;
@@ -606,4 +599,24 @@ body {
   font-size: 12px;
   line-height: 16px;
   color: #C2C2C2;
+}
+
+
+.pricing {
+}
+.title {
+}
+.pricing__items {
+}
+.pricing__item {
+}
+.pricing__item-name {
+}
+.pricing__item-rate {
+}
+.pricing__list {
+}
+.pricing__list-item {
+}
+.pricing__btn {
 }
