@@ -507,7 +507,7 @@ body {
 }
 
 .slider {
-  padding: 307px 0 325px 133px;
+  padding: 307px 0 114px 133px;
   background: #f6f8fa;
 }
 .slider__item {
@@ -529,6 +529,7 @@ body {
 
 .slick-list {
   max-width: 679px;
+  margin-bottom: 197px;
 }
 .slick-arrow {
   width: 35px;
@@ -548,7 +549,6 @@ body {
 }
 
 .slick-dots {
-  list-style: disc;
   display: flex;
   justify-content: flex-start;
 }
