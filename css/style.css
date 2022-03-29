@@ -669,13 +669,17 @@ body {
 }
 .pricing__btn:hover{
   border: 1.5px solid #fcbb08;
+  cursor: pointer;
 }
 
 
 .contact {
-  padding-top: 252px;
+  padding-top: 292px;
+  display: flex;
+  justify-content: space-between;
 }
-.contener {
+.contact .contener {
+  padding-right: 0;
 }
 .contact__content {
 }
