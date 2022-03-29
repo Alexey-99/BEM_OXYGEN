@@ -667,12 +667,10 @@ body {
   text-transform: uppercase;
   letter-spacing: 1.2px;
 }
-.pricing__btn:hover{
+.pricing__btn:hover {
   border: 1.5px solid #fcbb08;
   cursor: pointer;
 }
-
-
 .contact {
   padding-top: 292px;
   display: flex;
@@ -680,16 +678,98 @@ body {
 }
 .contact .contener {
   padding-right: 0;
+  margin: 0;
 }
 .contact__content {
+  padding-right: 112px;
+}
+
+.contact__title {
+  font-size: 60px;
+  letter-spacing: -1.65px;
+  color: #242121;
+  margin-bottom: 112px;
+  margin-top: 145px;
 }
 .contact__form {
+  display: flex;
+  flex-direction: column;
 }
+
 .contact__form-input {
+  padding-bottom: 16px;
+  border: 0;
+  border-bottom: 2px solid #373a39;
 }
-.contact__form-textarea {
+.contact__form-input + .contact__form-input {
+  margin-top: 32px;
+}
+.contact__form-input::-webkit-input-placeholder,
+.contact__form-textarea::-webkit-input-placeholder {
+  color: #888;
+  text-transform: uppercase;
+  font-family: 'Open Sans', sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 20px;
+  letter-spacing: 3.70909px;
+
+}
+.contact__form-textarea{
+  margin: 53px 0 40px 0;
+  border: none;
+  border-bottom: 2px solid #373a39;
+  height: 156px;
 }
 .contact__form-btn {
+  max-width: 230px;
+  height: 45px;
+  border: none;
+  background: #242121;
+  color: #FFFFFF;
+  font-family: 'Montserrat', sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 11px;
+  line-height: 13px;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  cursor: pointer;
 }
-.contact__map {
+
+
+.footer {
+  background: #373A39;
+}
+.footer__content {
+  color: #fff;
+}
+.contener {
+}
+.logo {
+}
+.logo-line {
+  margin: 0px;
+  padding-top: 110px;
+  width: 42px;
+  height: 42px;
+}
+.logo__link {
+}
+.logo__img {
+}
+.footer__social {
+}
+.footer__social-link {
+}
+.footer__adress {
+}
+.footer__phone {
+}
+.footer__email {
+}
+.footer-to__top-btn {
+}
+.footer__copy {
 }
