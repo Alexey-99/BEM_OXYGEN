@@ -598,6 +598,7 @@ body {
 }
 .pricing__items {
   display: flex;
+  justify-content: center;
 }
 .pricing__item {
   background: #fff;
@@ -743,9 +744,6 @@ body {
 .contact__map-img {
   height: 100%;
 }
-
-.footer {
-}
 .footer__content {
   color: #fff;
   background: #373a39;
@@ -759,8 +757,7 @@ body {
   margin-bottom: 73px;
 }
 .footer__social {
-  display: flex;
-  justify-content: center;
+  text-align: center;
   margin-bottom: 64px;
 }
 .footer__social-link {
@@ -780,12 +777,18 @@ body {
 .footer__social-link:hover {
   border-bottom: 1px solid #fcbb08;
 }
-
+.footer__information {
+  width: 241px;
+  height: 96px;
+  margin: 0 auto;
+}
 .footer__adress {
   text-align: center;
 }
 .footer__phone,
 .footer__email {
+  display: flex;
+  justify-content: center;
 }
 .footer__adress,
 .footer__phone,
@@ -798,18 +801,35 @@ body {
   color: #a8a8a8;
 }
 .footer__phone {
+  margin: 0 58px;
 }
 .footer__email {
+  margin: 0 71px;
+}
+.footer__btn {
+  margin: 0 auto;
 }
 .footer-to__top-btn {
   background: transparent;
   border: none;
   cursor: pointer;
   margin: 57px auto 60px auto;
+  width: 17px;
+  height: 9px;
+  margin-left: calc((100% - 17px) / 2);
 }
 .footer-to__top-btn-img {
   width: 17px;
   height: 9px;
 }
 .footer__copy {
+  background: #2a2c2b;
+  font-family: 'Open Sans', sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 16px;
+  color: #cccccc;
+  text-align: center;
+  padding: 43px 0 41px 0;
 }
