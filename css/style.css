@@ -54,6 +54,7 @@ body {
   text-transform: uppercase;
   transition: all 0.3s;
   letter-spacing: 0.6px;
+  border-bottom: 1px solid transparent;
 }
 .menu__list-item + .menu__list-item {
   margin-left: 50px;
@@ -103,7 +104,7 @@ body {
   position: absolute;
   left: 50%;
   transform: translateX(-50%);
-  bottom: 62px;
+  top: calc(100% - 62px - 43px);
 }
 
 .about {
@@ -634,13 +635,13 @@ body {
   margin-top: 26px;
 }
 .pricing__item-rate-one::before {
-  left: 16%;
+  left: 15%;
 }
 .pricing__item-rate-two::before {
   left: 41%;
 }
 .pricing__item-rate-three::before {
-  left: 66%;
+  left: 70%;
 }
 .pricing__list {
   text-align: center;
@@ -694,8 +695,8 @@ body {
 .contact__form {
   display: flex;
   flex-direction: column;
+  margin-bottom: 162px;
 }
-
 .contact__form-input {
   padding-bottom: 16px;
   border: 0;
@@ -714,20 +715,22 @@ body {
   font-size: 12px;
   line-height: 20px;
   letter-spacing: 3.70909px;
-
 }
-.contact__form-textarea{
+.contact__form-textarea {
   margin: 53px 0 40px 0;
   border: none;
   border-bottom: 2px solid #373a39;
   height: 156px;
+}
+.footer__btn {
+  width: 100%;
 }
 .contact__form-btn {
   max-width: 230px;
   height: 45px;
   border: none;
   background: #242121;
-  color: #FFFFFF;
+  color: #ffffff;
   font-family: 'Montserrat', sans-serif;
   font-style: normal;
   font-weight: 700;
@@ -737,39 +740,76 @@ body {
   letter-spacing: 2px;
   cursor: pointer;
 }
-
+.contact__map-img {
+  height: 100%;
+}
 
 .footer {
-  background: #373A39;
 }
 .footer__content {
   color: #fff;
-}
-.contener {
-}
-.logo {
+  background: #373a39;
 }
 .logo-line {
-  margin: 0px;
-  padding-top: 110px;
+  padding: 110px 54px 24px 54px;
   width: 42px;
   height: 42px;
-}
-.logo__link {
-}
-.logo__img {
+  margin: 0 auto;
+  border-bottom: 2px solid #fcbb08;
+  margin-bottom: 73px;
 }
 .footer__social {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 64px;
 }
 .footer__social-link {
+  text-transform: uppercase;
+  font-family: 'Montserrat', sans-serif;
+  font-style: normal;
+  font-weight: 300;
+  font-size: 12px;
+  line-height: 15px;
+  letter-spacing: 4px;
+  color: #fff;
+  border-bottom: 1px solid transparent;
 }
+.footer__social-link + .footer__social-link {
+  margin-left: 28px;
+}
+.footer__social-link:hover {
+  border-bottom: 1px solid #fcbb08;
+}
+
 .footer__adress {
+  text-align: center;
+}
+.footer__phone,
+.footer__email {
+}
+.footer__adress,
+.footer__phone,
+.footer__email {
+  font-family: 'Open Sans', sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 32px;
+  color: #a8a8a8;
 }
 .footer__phone {
 }
 .footer__email {
 }
 .footer-to__top-btn {
+  background: transparent;
+  border: none;
+  cursor: pointer;
+  margin: 57px auto 60px auto;
+}
+.footer-to__top-btn-img {
+  width: 17px;
+  height: 9px;
 }
 .footer__copy {
 }
