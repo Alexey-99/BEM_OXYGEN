@@ -25,16 +25,17 @@ body {
   padding: 0 135px;
   margin: 0 auto;
 }
+.header__top .contener {
+  padding: 0 52px;
+}
 .header__top-inner {
   display: flex;
   justify-content: space-between;
 }
 .logo {
-  margin-left: 52px;
   margin-top: 26px;
 }
 .menu {
-  padding-right: 53px;
   font-family: 'Raleway', sans-serif;
   font-style: normal;
   font-weight: 700;
@@ -50,6 +51,7 @@ body {
   cursor: pointer;
   position: relative;
   z-index: 10;
+  display: none;
 }
 .menu__btn::after,
 .menu__btn::before {
@@ -151,6 +153,7 @@ body {
   font-size: 48px;
   max-width: 344px;
   margin-right: 56px;
+  width: 100%;
 }
 .title::before {
   content: '';
@@ -170,6 +173,7 @@ body {
   font-size: 14px;
   line-height: 24px;
   color: #373a39;
+  max-width: 50%;
 }
 .about__text p {
   padding-bottom: 23px;
@@ -860,14 +864,93 @@ body {
   padding: 43px 0 41px 0;
 }
 
-@media (max-width: 1100px) {
-  .header__top .contener {
-    padding: 0 50px;
+@media (max-width: 865px) {
+  .contener {
+    padding: 0 52px;
+  }
+  .about-title::before {
+    left: 52px;
   }
 }
 
-@media (max-width: 900px) {
+@media (max-width: 800px) {
+  .logo {
+    margin-top: 0;
+  }
+  .menu__btn {
+    display: block;
+  }
+  .header__top-inner {
+    align-items: center;
+    height: 94px;
+  }
   .menu__list {
-    display: none;
+    position: absolute;
+    left: 20%;
+    right: 20%;
+    background-color: #fff;
+    display: block;
+    top: -200%;
+    transition: all 0.5s;
+    z-index: 5;
+    opacity: 0.9;
+    text-align: center;
+    padding: 0;
+  }
+  .menu__list-item + .menu__list-item {
+    margin-left: 0;
+  }
+  .menu__list-item {
+    padding: 25px 0;
+    border: 2px solid transparent;
+    color: #242121;
+  }
+  .menu__list-item:hover {
+    border: 2px solid #fcbb08;
+  }
+  .menu__list--active {
+    top: 30px;
+  }
+}
+
+@media (max-width: 700px) {
+  .about__inner {
+    display: contents;
+  }
+  .about-title {
+    margin-right: 0;
+    max-width: 100%;
+    text-align: center;
+    margin-bottom: 100px;
+  }
+  .about-title::before {
+    left: calc(50% - 117px);
+    width: 232px;
+  }
+  .about__text{
+    max-width: 100%;
+    text-align: justify;
+  }
+}
+
+@media (max-width: 450px) {
+  .header__content-title {
+    font-size: 70px;
+  }
+  .header__content-description {
+    font-size: 11px;
+  }
+}
+
+@media (max-width: 355px){
+
+}
+
+@media (max-width: 310px) {
+  .header__content-title {
+    font-size: 55px;
+  }
+  .header__content-description {
+    font-size: 8px;
   }
 }
