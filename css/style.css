@@ -270,7 +270,9 @@ body {
 .expertise__item {
   display: flex;
   justify-content: space-between;
-  margin-right: 27px;
+}
+.expertise__item + .expertise__item {
+  margin-left: 27px;
 }
 .expertise__item-img {
   width: 50px;
@@ -293,6 +295,7 @@ body {
 }
 .expertise__item-text {
   color: #777777;
+  text-align: justify;
 }
 
 .features {
@@ -306,6 +309,7 @@ body {
 .features__img {
   margin-right: 130px;
   max-width: 50%;
+  max-height: 840px;
 }
 .features__title {
   font-family: 'Montserrat', sans-serif;
@@ -323,11 +327,12 @@ body {
   margin-bottom: 67px;
   width: auto;
 }
-.features__text {
+.features__content {
   font-size: 14px;
 }
 .features__text p {
   padding-bottom: 23px;
+  text-align: justify;
 }
 .portfolio {
   margin-top: 141px;
@@ -866,8 +871,48 @@ body {
   padding: 43px 0 41px 0;
 }
 
+@media (max-width: 1250px) {
+  .portfolio__btn + .portfolio__btn {
+    margin-left: 30px;
+  }
+}
+
+@media (max-width: 1060px) {
+  .features {
+    padding-right: 0;
+  }
+  .features__inner {
+    display: block;
+  }
+  .features__img {
+    display: flex;
+    margin: 0 auto;
+  }
+  .features__content {
+    padding: 0 135px;
+  }
+}
+
+@media (max-width: 1050px) {
+  .expertise__item {
+    display: block;
+  }
+  .expertise__item-img {
+    padding: 0;
+    display: flex;
+    margin: 0 auto 15px auto;
+  }
+  .expertise__item-title {
+    text-align: center;
+  }
+  .expertise__item-img-increased {
+    margin: 0 auto 10px auto;
+  }
+}
+
 @media (max-width: 865px) {
-  .contener {
+  .contener,
+  .features__content {
     padding: 0 52px;
   }
   .about-title::before {
@@ -942,6 +987,37 @@ body {
     max-width: 100%;
     text-align: justify;
   }
+  .expertise__items {
+    display: block;
+  }
+  .expertise__item + .expertise__item {
+    margin: 50px 0 0 0;
+  }
+  .features__title {
+    font-size: 50px;
+    text-align: center;
+    margin-bottom: 50px;
+  }
+  .features__title::before {
+    content: '';
+    background-image: url(../images/title-decor.svg);
+    position: absolute;
+    width: 453px;
+    height: 2px;
+    margin-top: 75px;
+  }
+  .features__title-decor {
+    display: none;
+  }
+}
+
+@media (max-width: 570px) {
+  .features__title {
+    font-size: 40px;
+  }
+  .features__title::before {
+    width: 355px;
+  }
 }
 
 @media (max-width: 555px) {
@@ -953,6 +1029,9 @@ body {
     left: calc(50% - 187px);
     width: 372px;
   }
+  .features__img {
+    max-width: 100%;
+  }
 }
 
 @media (max-width: 480px) {
@@ -962,6 +1041,17 @@ body {
   .expertise-title::before {
     left: calc(50% - 145px);
     width: 289px;
+  }
+}
+
+@media (max-width: 475px) {
+  .features__title {
+    font-size: 30px;
+    margin-bottom: 30px;
+  }
+  .features__title::before {
+    width: 260px;
+    margin-top: 69px;
   }
 }
 
@@ -976,7 +1066,7 @@ body {
 
 @media (max-width: 440px) {
   .expertise__content-item-one::before {
-    width: 233px; 
+    width: 233px;
   }
   .expertise__content-item-two::before {
     width: 207px;
@@ -1011,6 +1101,17 @@ body {
   }
 }
 
+@media (max-width: 380px) {
+  .features__title {
+    font-size: 20px;
+    margin-bottom: 10px;
+  }
+  .features__title::before {
+    width: 166px;
+    margin-top: 58px;
+  }
+}
+
 @media (max-width: 355px) {
   .about-title {
     font-size: 34px;
@@ -1034,7 +1135,7 @@ body {
     margin-top: 65px;
   }
   .expertise__content-item-one::before {
-    width: 163px; 
+    width: 163px;
   }
   .expertise__content-item-two::before {
     width: 98px;
@@ -1051,17 +1152,17 @@ body {
   .expertise__content-item-three span {
     padding-left: 50px;
   }
-  .expertise__content-item{
+  .expertise__content-item {
     width: 181px;
   }
 }
 
-@media (max-width: 355px){
-  .header__content-title{
+@media (max-width: 355px) {
+  .header__content-title {
     font-size: 60px;
     margin-bottom: 3.5px;
   }
-  .header__content-description{
+  .header__content-description {
     font-size: 9px;
   }
 }
@@ -1076,7 +1177,8 @@ body {
 }
 
 @media (max-width: 286px) {
-  .contener {
+  .contener,
+  .features__content {
     padding: 0 10px;
   }
   .about-title {
@@ -1088,7 +1190,7 @@ body {
     left: calc(50% - 64px);
     margin-top: 65px;
   }
-  .header__content-title{
+  .header__content-title {
     font-size: 49px;
   }
   .header__content-description {
