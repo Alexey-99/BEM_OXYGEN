@@ -927,6 +927,15 @@ body {
   }
 }
 
+@media (max-width: 1000px){
+  /*.portfolio__images{
+    display: block;
+  }
+  .column-one{
+    display: ;
+  } */
+}
+
 @media (max-width: 865px) {
   .contener,
   .features__content {
